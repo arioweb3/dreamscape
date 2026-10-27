@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080817"><meta name="description" content="A tiny interactive universe. Drift through stars and discover strange planets.">
+<title>DREAMSCAPE — Explore the unknown</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="universe" aria-hidden="true"></canvas><div class="vignette"></div>
+<header class="topbar"><a class="brand" href="#"><span class="brand-mark">✦</span>DREAMSCAPE</a><div class="top-meta"><span class="live-dot"></span> UNIVERSE ONLINE <span class="meta-divider">/</span> SECTOR 07</div><button id="soundBtn" class="icon-btn">♫ <span id="soundLabel">SOUND OFF</span></button></header>
+<main>
+<section class="hero"><p class="eyebrow"><span class="eyebrow-line"></span> YOUR PERSONAL COSMOS</p><h1>Somewhere,<br>something <em>wonders.</em></h1><p class="intro">Leave the familiar behind. Drift through a universe made of light, curiosity, and impossible places.</p><div class="hero-actions"><button id="exploreBtn" class="primary-btn">ENTER THE UNIVERSE <span>↗</span></button><button id="randomBtn" class="quiet-btn">SURPRISE ME <span>✧</span></button></div></section>
+<section class="mission-panel" aria-live="polite"><div class="panel-heading"><span class="tiny-orbit">◎</span> TRANSMISSION RECEIVED <span class="panel-code">DS-07</span></div><h2 id="planetName">The Lumen Fields</h2><p id="planetDescription">A quiet stretch of space where starlight gathers like dust and every orbit tells a story.</p><div class="planet-stats"><div><span class="stat-label">SECTOR</span><strong id="sectorStat">07 / LUMEN</strong></div><div><span class="stat-label">DISTANCE</span><strong id="distanceStat">4.2 LY</strong></div><div><span class="stat-label">SIGNAL</span><strong class="signal"><span></span> STABLE</strong></div></div><button id="nextBtn" class="next-btn">DISCOVER ANOTHER <span>→</span></button></section>
+<section class="bottom-row"><div class="coordinates"><span class="coord-icon">⌖</span><div><span class="stat-label">CURRENT COORDINATES</span><strong id="coordinates">X 048.21 / Y 192.04</strong></div></div><div class="scroll-hint"><span class="mouse-icon"></span> MOVE YOUR CURSOR TO BEND THE STARS</div><div class="index-count"><span id="planetIndex">01</span><span class="count-sep">/</span><span>05</span></div></section>
+</main><div id="toast" class="toast" role="status">A new signal has been discovered</div><footer><span>MADE FOR THE CURIOUS</span><span>NO MAPS. NO LIMITS. JUST WONDER.</span></footer><script src="app.js"></script>
+</body></html>
